@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_counterFragment"
+            app:destination="@id/counterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_resourceTrackerFragment"
+            app:destination="@id/resourceTrackerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_scoreCalculatorFragment"
+            app:destination="@id/scoreCalculatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diceFragment"
+            app:destination="@id/diceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_gameCollectionFragment"
+            app:destination="@id/gameCollectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreCalculatorFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.ScoreCalculatorFragment"
+        android:label="fragment_score_calculator"
+        tools:layout="@layout/fragment_score_calculator" >
+        <action
+            android:id="@+id/action_scoreCalculatorFragment_to_catanScoreCalculatorFragment"
+            app:destination="@id/catanScoreCalculatorFragment" />
+        <action
+            android:id="@+id/action_scoreCalculatorFragment_to_genericScoreCalculatorFragment"
+            app:destination="@id/genericScoreCalculatorFragment" />
+        <action
+            android:id="@+id/action_scoreCalculatorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_scoreCalculatorFragment_to_scytheScoreFragment"
+            app:destination="@id/scytheScoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.DiceFragment"
+        android:label="fragment_dice"
+        tools:layout="@layout/fragment_dice" >
+        <action
+            android:id="@+id/action_diceFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/counterFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.CounterFragment"
+        android:label="fragment_counter"
+        tools:layout="@layout/fragment_counter" >
+        <action
+            android:id="@+id/action_counterFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resourceTrackerFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.ResourceTrackerFragment"
+        android:label="fragment_resource_tracker"
+        tools:layout="@layout/fragment_resource_tracker" >
+        <action
+            android:id="@+id/action_resourceTrackerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catanScoreCalculatorFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.CatanScoreCalculatorFragment"
+        android:label="fragment_catan_score_calculator"
+        tools:layout="@layout/fragment_catan_score_calculator" >
+        <action
+            android:id="@+id/action_catanScoreCalculatorFragment_to_scoreCalculatorFragment"
+            app:destination="@id/scoreCalculatorFragment" />
+        <action
+            android:id="@+id/action_catanScoreCalculatorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genericScoreCalculatorFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.GenericScoreCalculatorFragment"
+        android:label="fragment_generic_score_calculator"
+        tools:layout="@layout/fragment_generic_score_calculator" >
+        <action
+            android:id="@+id/generic_to_score"
+            app:destination="@id/scoreCalculatorFragment" />
+        <action
+            android:id="@+id/generic_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scytheScoreFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.ScytheScoreFragment"
+        android:label="fragment_scythe_score"
+        tools:layout="@layout/fragment_scythe_score" >
+        <action
+            android:id="@+id/action_scytheScoreFragment_to_scoreCalculatorFragment"
+            app:destination="@id/scoreCalculatorFragment" />
+        <action
+            android:id="@+id/action_scytheScoreFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_scytheScoreFragment_to_calculatedScytheFragment"
+            app:destination="@id/calculatedScytheFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatedScytheFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.CalculatedScytheFragment"
+        android:label="fragment_calculated_scythe"
+        tools:layout="@layout/fragment_calculated_scythe" >
+        <action
+            android:id="@+id/action_calculatedScytheFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameCollectionFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.GameCollectionFragment"
+        android:label="fragment_game_collection"
+        tools:layout="@layout/fragment_game_collection" >
+        <action
+            android:id="@+id/action_gameCollectionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_gameCollectionFragment_to_addGameFragment"
+            app:destination="@id/addGameFragment" />
+        <action
+            android:id="@+id/action_gameCollectionFragment_self"
+            app:destination="@id/gameCollectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGameFragment"
+        android:name="com.jaredlee.boardgamehelper.fragments.AddGameFragment"
+        android:label="fragment_add_game"
+        tools:layout="@layout/fragment_add_game" />
+</navigation>

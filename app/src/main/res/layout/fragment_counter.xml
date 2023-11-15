@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CounterFragment" >
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Counter"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/counterHomeButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/counterHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Go Home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/counterNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:text="0"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/addOne"
+        app:layout_constraintStart_toEndOf="@+id/addOne"
+        app:layout_constraintTop_toTopOf="@+id/addOne" />
+
+    <Button
+        android:id="@+id/add5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="+5"
+        app:layout_constraintEnd_toEndOf="@+id/addOne"
+        app:layout_constraintStart_toStartOf="@+id/addOne"
+        app:layout_constraintTop_toBottomOf="@+id/addOne" />
+
+    <Button
+        android:id="@+id/minus5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="-5"
+        app:layout_constraintBottom_toBottomOf="@+id/add5"
+        app:layout_constraintStart_toEndOf="@+id/add5"
+        app:layout_constraintTop_toTopOf="@+id/add5" />
+
+    <Button
+        android:id="@+id/add10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="+10"
+        app:layout_constraintEnd_toEndOf="@+id/add5"
+        app:layout_constraintStart_toStartOf="@+id/add5"
+        app:layout_constraintTop_toBottomOf="@+id/add5" />
+
+    <Button
+        android:id="@+id/minus10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="-10"
+        app:layout_constraintBottom_toBottomOf="@+id/add10"
+        app:layout_constraintStart_toEndOf="@+id/add10"
+        app:layout_constraintTop_toTopOf="@+id/add10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

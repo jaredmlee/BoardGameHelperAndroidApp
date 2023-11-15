@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DiceFragment" >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Dice"
+        android:textColor="#0D2088"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DiceHomeButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/DiceHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Go Home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#4CAF50"
+        android:text="add D6"
+        app:layout_constraintBottom_toBottomOf="@+id/add8"
+        app:layout_constraintEnd_toStartOf="@+id/add8"
+        app:layout_constraintTop_toTopOf="@+id/add8" />
+
+    <Button
+        android:id="@+id/add8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFC107"
+        android:text="add D8"
+        app:layout_constraintBottom_toBottomOf="@+id/addD10"
+        app:layout_constraintEnd_toStartOf="@+id/addD10"
+        app:layout_constraintTop_toTopOf="@+id/addD10" />
+
+    <Button
+        android:id="@+id/addD10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="500dp"
+        android:backgroundTint="#3F51B5"
+        android:text="add D10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <Button
+        android:id="@+id/add20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#9C27B0"
+        android:text="add D20"
+        app:layout_constraintBottom_toBottomOf="@+id/addD10"
+        app:layout_constraintStart_toEndOf="@+id/addD10"
+        app:layout_constraintTop_toTopOf="@+id/addD10" />
+
+    <TextView
+        android:id="@+id/D6one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="410dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete6" />
+
+    <Button
+        android:id="@+id/delete6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A1170C"
+        android:text="remove"
+        app:layout_constraintEnd_toEndOf="@+id/add6"
+        app:layout_constraintStart_toStartOf="@+id/add6"
+        app:layout_constraintTop_toBottomOf="@+id/add6" />
+
+    <Button
+        android:id="@+id/delete8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#A1170C"
+        android:text="remove"
+        app:layout_constraintEnd_toEndOf="@+id/add8"
+        app:layout_constraintStart_toStartOf="@+id/add8"
+        app:layout_constraintTop_toBottomOf="@+id/add8" />
+
+    <Button
+        android:id="@+id/delete10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#A1170C"
+        android:text="remove"
+        app:layout_constraintEnd_toEndOf="@+id/addD10"
+        app:layout_constraintStart_toStartOf="@+id/addD10"
+        app:layout_constraintTop_toBottomOf="@+id/addD10" />
+
+    <Button
+        android:id="@+id/delete20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A1170C"
+        android:text="remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addD10"
+        app:layout_constraintTop_toBottomOf="@+id/add20" />
+
+    <TextView
+        android:id="@+id/D6two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/D6one"
+        app:layout_constraintStart_toStartOf="@+id/D6one"
+        app:layout_constraintTop_toBottomOf="@+id/D6one" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Roll All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/D6three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/D6two"
+        app:layout_constraintStart_toStartOf="@+id/D6two"
+        app:layout_constraintTop_toBottomOf="@+id/D6two" />
+
+    <TextView
+        android:id="@+id/D6four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/D6three"
+        app:layout_constraintStart_toStartOf="@+id/D6three"
+        app:layout_constraintTop_toBottomOf="@+id/D6three" />
+
+    <TextView
+        android:id="@+id/D6five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/D6four"
+        app:layout_constraintStart_toStartOf="@+id/D6four"
+        app:layout_constraintTop_toBottomOf="@+id/D6four" />
+
+    <TextView
+        android:id="@+id/D6six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/D6five"
+        app:layout_constraintStart_toStartOf="@+id/D6five"
+        app:layout_constraintTop_toBottomOf="@+id/D6five" />
+
+    <TextView
+        android:id="@+id/D8one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D6one"
+        app:layout_constraintStart_toEndOf="@+id/D6one"
+        app:layout_constraintTop_toTopOf="@+id/D6one" />
+
+    <TextView
+        android:id="@+id/D8two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D6two"
+        app:layout_constraintStart_toEndOf="@+id/D6two"
+        app:layout_constraintTop_toTopOf="@+id/D6two" />
+
+    <TextView
+        android:id="@+id/D8three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D6three"
+        app:layout_constraintStart_toEndOf="@+id/D6three"
+        app:layout_constraintTop_toTopOf="@+id/D6three" />
+
+    <TextView
+        android:id="@+id/D8four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D6four"
+        app:layout_constraintStart_toEndOf="@+id/D6four"
+        app:layout_constraintTop_toTopOf="@+id/D6four" />
+
+    <TextView
+        android:id="@+id/D8five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D6five"
+        app:layout_constraintStart_toEndOf="@+id/D6five"
+        app:layout_constraintTop_toTopOf="@+id/D6five" />
+
+    <TextView
+        android:id="@+id/D8six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D6six"
+        app:layout_constraintStart_toEndOf="@+id/D6six"
+        app:layout_constraintTop_toTopOf="@+id/D6six" />
+
+    <TextView
+        android:id="@+id/D10one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D8one"
+        app:layout_constraintStart_toEndOf="@+id/D8one"
+        app:layout_constraintTop_toTopOf="@+id/D8one" />
+
+    <TextView
+        android:id="@+id/D10two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D8two"
+        app:layout_constraintStart_toEndOf="@+id/D8two"
+        app:layout_constraintTop_toTopOf="@+id/D8two" />
+
+    <TextView
+        android:id="@+id/D10three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D8three"
+        app:layout_constraintStart_toEndOf="@+id/D8three"
+        app:layout_constraintTop_toTopOf="@+id/D8three" />
+
+    <TextView
+        android:id="@+id/D10four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D8four"
+        app:layout_constraintStart_toEndOf="@+id/D8four"
+        app:layout_constraintTop_toTopOf="@+id/D8four" />
+
+    <TextView
+        android:id="@+id/D10five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D8five"
+        app:layout_constraintStart_toEndOf="@+id/D8five"
+        app:layout_constraintTop_toTopOf="@+id/D8five" />
+
+    <TextView
+        android:id="@+id/D10six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D8six"
+        app:layout_constraintStart_toEndOf="@+id/D8six"
+        app:layout_constraintTop_toTopOf="@+id/D8six" />
+
+    <TextView
+        android:id="@+id/D20one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D10one"
+        app:layout_constraintStart_toEndOf="@+id/D10one"
+        app:layout_constraintTop_toTopOf="@+id/D10one" />
+
+    <TextView
+        android:id="@+id/D20two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D10two"
+        app:layout_constraintStart_toEndOf="@+id/D10two"
+        app:layout_constraintTop_toTopOf="@+id/D10two" />
+
+    <TextView
+        android:id="@+id/D20three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/D10three"
+        app:layout_constraintTop_toTopOf="@+id/D10three" />
+
+    <TextView
+        android:id="@+id/D20four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D10four"
+        app:layout_constraintStart_toEndOf="@+id/D10four"
+        app:layout_constraintTop_toTopOf="@+id/D10four" />
+
+    <TextView
+        android:id="@+id/D20five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D10five"
+        app:layout_constraintStart_toEndOf="@+id/D10five"
+        app:layout_constraintTop_toTopOf="@+id/D10five" />
+
+    <TextView
+        android:id="@+id/D20six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/D10six"
+        app:layout_constraintStart_toEndOf="@+id/D10six"
+        app:layout_constraintTop_toTopOf="@+id/D10six" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
